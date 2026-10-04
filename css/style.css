@@ -631,3 +631,62 @@ form button {
         grid-template-columns: 1fr !important;
     }
 }
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        padding: 15px 20px;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .register-btn {
+        padding: 10px 16px;
+    }
+
+    .events-section {
+        padding: 50px 20px;
+    }
+
+    .event-container {
+        grid-template-columns: 1fr !important;
+        gap: 20px;
+    }
+
+    .upcoming-events {
+        flex-direction: column !important;
+    }
+
+    .upcoming-events .event-card {
+        width: 100% !important;
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .event-info {
+        padding: 20px;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    footer {
+        padding: 25px 20px;
+        text-align: center;
+    }
+}

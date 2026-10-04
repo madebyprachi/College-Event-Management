@@ -33,3 +33,28 @@ if (registrationForm) {
     });
 
 }
+
+
+// =========================
+// AUTO SELECT EVENT
+// =========================
+
+const eventSelect = document.getElementById("event");
+
+if (eventSelect) {
+
+    const params = new URLSearchParams(window.location.search);
+    const eventType = params.get("event");
+
+    if (eventType === "tech") {
+        eventSelect.value = "Tech Fest 2026";
+    }
+
+    if (eventType === "cultural") {
+        eventSelect.value = "Cultural Fest";
+    }
+
+    if (eventType === "sports") {
+        eventSelect.value = "Sports Meet";
+    }
+}
