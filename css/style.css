@@ -1,0 +1,633 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f7f5;
+    color: #171717;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+header {
+    background: #ffffff;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.nav-links {
+    display: flex;
+    gap: 35px;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+}
+
+.nav-links a:hover {
+    color: #000;
+}
+
+.register-btn {
+    text-decoration: none;
+    background: #171717;
+    color: white;
+    padding: 11px 20px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+
+    background: #e9e9e4;
+}
+
+.hero-content {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    padding: 80px 30px;
+}
+
+.small-title {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+    color: #666;
+}
+
+.hero h1 {
+    font-size: 72px;
+    line-height: 1.05;
+    letter-spacing: -3px;
+    margin-bottom: 25px;
+}
+
+.hero-text {
+    max-width: 500px;
+    font-size: 17px;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 35px;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.primary-btn,
+.secondary-btn {
+    text-decoration: none;
+    padding: 14px 24px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.primary-btn {
+    background: #171717;
+    color: white;
+}
+
+.secondary-btn {
+    border: 1px solid #999;
+    color: #171717;
+}
+
+
+/* =========================
+   EVENTS
+========================= */
+
+.events-section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 90px 30px;
+}
+
+.section-heading {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.section-heading h2 {
+    font-size: 42px;
+    letter-spacing: -1px;
+}
+
+.section-heading a {
+    text-decoration: none;
+    color: #171717;
+    font-size: 14px;
+}
+
+
+/* =========================
+   EVENT CARDS
+========================= */
+
+.event-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.event-card {
+    background: white;
+    border: 1px solid #e3e3e3;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-6px);
+}
+
+.event-image {
+    height: 210px;
+    background: #d8d8d3;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #777;
+}
+
+.event-info {
+    padding: 25px;
+}
+
+.event-info > span {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: #777;
+}
+
+.event-info h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.event-info > p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.event-details {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+.event-details p {
+    font-size: 13px;
+    color: #555;
+    margin-bottom: 7px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #171717;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+footer p {
+    font-size: 13px;
+    margin: 6px 0;
+    color: #cccccc;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .event-container {
+        grid-template-columns: 1fr;
+    }
+
+    .section-heading {
+        align-items: flex-start;
+        gap: 20px;
+        flex-direction: column;
+    }
+}
+
+
+
+/* =========================
+   REGISTRATION FORM
+========================= */
+
+form {
+    max-width: 650px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form label {
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 12px;
+}
+
+form input,
+form select {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #d5d5d5;
+    border-radius: 7px;
+    background: #ffffff;
+    font-size: 14px;
+    outline: none;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+form input:focus,
+form select:focus {
+    border-color: #171717;
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.06);
+}
+
+form button {
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    width: fit-content;
+}
+
+/* =========================
+   SUCCESS MESSAGE
+========================= */
+
+#successMessage {
+    margin-top: 25px;
+    max-width: 650px;
+}
+
+.success-box {
+    background: #171717;
+    color: white;
+    padding: 22px 25px;
+    border-radius: 10px;
+
+    animation: successAppear 0.5s ease forwards;
+}
+
+.success-box h3 {
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+
+.success-box p {
+    color: #cccccc;
+    font-size: 14px;
+}
+
+
+/* =========================
+   ANIMATIONS
+========================= */
+
+@keyframes successAppear {
+
+    0% {
+        opacity: 0;
+        transform: translateY(15px) scale(0.98);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+
+/* =========================
+   HOME PAGE ANIMATIONS
+========================= */
+
+.hero-content {
+    animation: heroAppear 0.8s ease forwards;
+}
+
+@keyframes heroAppear {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Event cards */
+
+.event-card {
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Buttons */
+
+.primary-btn,
+.secondary-btn,
+.register-btn {
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease;
+}
+
+.primary-btn:hover,
+.register-btn:hover {
+    transform: translateY(-2px);
+}
+
+.secondary-btn:hover {
+    transform: translateY(-2px);
+    background: #171717;
+    color: white;
+}
+
+
+/* Navbar links */
+
+.nav-links a {
+    position: relative;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+
+    width: 0;
+    height: 2px;
+
+    background: #171717;
+
+    transition: width 0.25s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+/* =========================
+   EVENT CARD FIX
+========================= */
+
+.event-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    width: 100%;
+}
+
+.event-card {
+    position: relative;
+    width: 100%;
+    min-width: 0;
+    background: #ffffff;
+    border: 1px solid #e3e3e3;
+    border-radius: 10px;
+    overflow: hidden;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+.event-image {
+    width: 100%;
+    height: 210px;
+    background: #d8d8d3;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.event-info {
+    width: 100%;
+    padding: 25px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .event-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* =========================
+   UPCOMING EVENTS - HOME
+========================= */
+
+.upcoming-events {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 25px !important;
+    align-items: stretch !important;
+}
+
+.upcoming-events .event-card {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    background: #ffffff !important;
+    border: 1px solid #dddddd !important;
+    border-radius: 12px !important;
+    overflow: hidden !important;
+}
+
+.upcoming-events .event-image {
+    width: 100% !important;
+    height: 200px !important;
+    flex-shrink: 0 !important;
+}
+
+.upcoming-events .event-info {
+    padding: 24px !important;
+    flex: 1 !important;
+}
+
+
+/* Phone */
+
+@media (max-width: 768px) {
+    .upcoming-events {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+
+/* Fix first Upcoming Event card */
+
+.upcoming-events .event-card:first-child {
+    border: 1px solid #dddddd !important;
+    border-radius: 12px !important;
+    background: #ffffff !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+    height: 100% !important;
+}
+
+/* HOME - UPCOMING EVENTS */
+
+.upcoming-events {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 24px !important;
+    width: 100% !important;
+}
+
+.upcoming-events .event-card {
+    width: 100% !important;
+    max-width: none !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+}
+
+.upcoming-events .event-image {
+    height: 180px !important;
+}
+
+@media (max-width: 768px) {
+    .upcoming-events {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+
+
+/* =========================
+   UPCOMING EVENTS - FINAL
+========================= */
+
+.upcoming-events {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 24px !important;
+}
+
+.upcoming-events .event-card {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    background: #ffffff !important;
+    border: 1px solid #e3e3e3 !important;
+    border-radius: 10px !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+}
+
+.upcoming-events .event-image {
+    width: 100% !important;
+    height: 180px !important;
+    flex-shrink: 0 !important;
+}
+
+.upcoming-events .event-info {
+    width: 100% !important;
+    padding: 24px !important;
+}
+
+@media (max-width: 768px) {
+    .upcoming-events {
+        grid-template-columns: 1fr !important;
+    }
+}
