@@ -693,27 +693,27 @@ form button {
 
 
 
-/* Coral & Peach Event Cards */
+/* Beige & Cyan Event Cards */
 
 .event-card {
-    background: #f5f5dc !important;
-    border: 1px solid #008080 !important;
+    background: #dfdfbd !important;
+    border: 1px solid #00FFFF !important;
     border-radius: 12px;
     transition: all 0.3s ease;
 }
 
 .event-card .event-info {
-    background: #f5f5dc !important;
+    background: #dfdfbd !important;
 }
 
 .event-card:hover {
-    border-color: #008080 !important;
+    border-color: #ffffff !important;
     box-shadow: 0 10px 25px rgba(255, 255, 255, 0.25);
     transform: translateY(-6px);
 }
 
 .event-card .primary-btn {
-    background: #F5F5DC;
+    background: #dfdfbd;
     color: #000000;
 }
 
@@ -723,10 +723,10 @@ form button {
 
 
 
-/* Events Page - Navy Blue Background */
+/* Events Page - gray Background */
 
 body:has(.event-container) {
-    background-color: #000080;
+    background-color: #414141;
 }
 
 .events-section {
