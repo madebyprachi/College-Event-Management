@@ -720,3 +720,15 @@ form button {
 .event-card .primary-btn:hover {
     background: #ffffff;
 }
+
+
+
+/* Events Page - Navy Blue Background */
+
+body:has(.event-container) {
+    background-color: #000080;
+}
+
+.events-section {
+    background-color: transparent;
+}
