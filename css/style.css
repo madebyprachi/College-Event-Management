@@ -559,7 +559,7 @@ form button {
 .upcoming-events .event-card:first-child {
     border: 1px solid #dddddd !important;
     border-radius: 12px !important;
-    background: #000080 !important;
+    background: #ffffff !important;
     overflow: hidden !important;
     box-sizing: border-box !important;
     height: 100% !important;
@@ -608,7 +608,7 @@ form button {
     flex-direction: column !important;
     width: 100% !important;
     min-width: 0 !important;
-    background: #ffffff !important;
+    background: #000080 !important;
     border: 1px solid #e3e3e3 !important;
     border-radius: 10px !important;
     overflow: hidden !important;
