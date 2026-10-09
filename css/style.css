@@ -732,3 +732,79 @@ body:has(.event-container) {
 .events-section {
     background-color: transparent;
 }
+
+
+
+/* HOME PAGE - GRAY & BEIGE THEME */
+
+body {
+    background-color: #414141;
+}
+
+/* Home page background */
+.hero {
+    background-color: #414141 !important;
+}
+
+/* Upcoming Event Cards */
+.upcoming-events .event-card {
+    background-color: #dfdfbd !important;
+    border: 1px solid #00ffff !important;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 8px rgba(0, 255, 255, 0.15);
+    transition: all 0.3s ease;
+}
+
+/* Beige card content */
+.upcoming-events .event-info {
+    background-color: #dfdfbd !important;
+}
+
+/* Card hover - white glow */
+.upcoming-events .event-card:hover {
+    border-color: #ffffff !important;
+    box-shadow:
+        0 0 10px #ffffff,
+        0 0 25px rgba(255, 255, 255, 0.65);
+    transform: translateY(-6px);
+}
+
+/* Card image placeholder */
+.upcoming-events .event-image {
+    background-color: #d8d8d3 !important;
+}
+
+/* Home page text */
+.hero h1,
+.events-section h1,
+.section-heading h2 {
+    color: #ffffff;
+}
+
+/* Hero description */
+.hero .hero-text,
+.hero .small-title {
+    color: #e0e0e0;
+}
+
+
+
+/* FIX: HOME PAGE UPCOMING EVENT CARD BORDERS */
+
+.upcoming-events .event-card,
+.upcoming-events .event-card:first-child {
+    border: 1px solid #00ffff !important;
+    box-shadow: 0 0 8px rgba(0, 255, 255, 0.35) !important;
+    background: #dfdfbd !important;
+    transition: all 0.3s ease !important;
+}
+
+.upcoming-events .event-card:hover,
+.upcoming-events .event-card:first-child:hover {
+    border: 1px solid #ffffff !important;
+    box-shadow:
+        0 0 10px #ffffff,
+        0 0 25px rgba(255, 255, 255, 0.65) !important;
+    transform: translateY(-6px);
+}
