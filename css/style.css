@@ -696,14 +696,14 @@ form button {
 /* Coral & Peach Event Cards */
 
 .event-card {
-    background: #98FB98 !important;
+    background: #f5f5dc !important;
     border: 1px solid #008080 !important;
     border-radius: 12px;
     transition: all 0.3s ease;
 }
 
 .event-card .event-info {
-    background: #98FF98 !important;
+    background: #f5f5dc !important;
 }
 
 .event-card:hover {
@@ -713,10 +713,10 @@ form button {
 }
 
 .event-card .primary-btn {
-    background: #008080;
-    color: #000080;
+    background: #F5F5DC;
+    color: #000000;
 }
 
 .event-card .primary-btn:hover {
-    background: #f2693c;
+    background: #ffffff;
 }
