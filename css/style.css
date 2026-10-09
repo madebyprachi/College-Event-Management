@@ -608,7 +608,7 @@ form button {
     flex-direction: column !important;
     width: 100% !important;
     min-width: 0 !important;
-    background: #ffffff !important;
+    background: #000080 !important;
     border: 1px solid #e3e3e3 !important;
     border-radius: 10px !important;
     overflow: hidden !important;
@@ -708,7 +708,7 @@ form button {
 
 .event-card:hover {
     border-color: #008080 !important;
-    box-shadow: 0 10px 25px rgba(255, 127, 80, 0.25);
+    box-shadow: 0 10px 25px rgba(255, 255, 255, 0.25);
     transform: translateY(-6px);
 }
 
