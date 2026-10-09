@@ -690,3 +690,33 @@ form button {
         text-align: center;
     }
 }
+
+
+
+/* Coral & Peach Event Cards */
+
+.event-card {
+    background: #FFB5B4 !important;
+    border: 1px solid #FF7F50 !important;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.event-card .event-info {
+    background: #FFB5B4 !important;
+}
+
+.event-card:hover {
+    border-color: #FF7F50 !important;
+    box-shadow: 0 10px 25px rgba(255, 127, 80, 0.25);
+    transform: translateY(-6px);
+}
+
+.event-card .primary-btn {
+    background: #FF7F50;
+    color: white;
+}
+
+.event-card .primary-btn:hover {
+    background: #f2693c;
+}
