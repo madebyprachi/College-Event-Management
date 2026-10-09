@@ -176,8 +176,8 @@ header {
 }
 
 .event-card {
-    background: white;
-    border: 1px solid #e3e3e3;
+    background: #ff7f50;
+    border: 1px solid #ffb5b4;
     border-radius: 10px;
     overflow: hidden;
     transition: transform 0.3s ease;
