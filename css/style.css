@@ -808,3 +808,245 @@ body {
         0 0 25px rgba(255, 255, 255, 0.65) !important;
     transform: translateY(-6px);
 }
+
+
+
+
+/* =========================
+   CAMPUS EVENTS - NEW THEME
+========================= */
+
+body {
+    background-color: #0B132B !important;
+    color: #FFFFFF;
+}
+
+/* Navbar */
+header {
+    background-color: #0B132B !important;
+    border-bottom: 1px solid #1C2541;
+}
+
+.logo,
+.nav-links a {
+    color: #FFFFFF !important;
+}
+
+/* Hero and sections */
+.hero,
+.events-section {
+    background-color: #0B132B !important;
+}
+
+.hero h1,
+.events-section h1,
+.section-heading h2,
+.event-info h3 {
+    color: #FFFFFF;
+}
+
+.hero-text,
+.small-title,
+.event-info p {
+    color: #D8E2FF;
+}
+
+/* Event cards */
+.event-card,
+.upcoming-events .event-card {
+    background-color: #1C2541 !important;
+    border: 1px solid #3A86FF !important;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(58, 134, 255, 0.15);
+    transition: all 0.3s ease;
+}
+
+/* Card content */
+.event-info,
+.upcoming-events .event-info {
+    background-color: #1C2541 !important;
+    color: #FFFFFF;
+}
+
+/* Card hover */
+.event-card:hover,
+.upcoming-events .event-card:hover {
+    border-color: #FFFFFF !important;
+    box-shadow: 0 0 18px rgba(58, 134, 255, 0.65);
+    transform: translateY(-6px);
+}
+
+/* Buttons */
+.primary-btn,
+.secondary-btn,
+.register-btn,
+form button {
+    background-color: #3A86FF !important;
+    color: #FFFFFF !important;
+    border: 1px solid #3A86FF;
+    transition: all 0.3s ease;
+}
+
+/* Button hover */
+.primary-btn:hover,
+.secondary-btn:hover,
+.register-btn:hover,
+form button:hover {
+    background-color: #FFFFFF !important;
+    color: #0B132B !important;
+    border-color: #FFFFFF;
+}
+
+/* Event image placeholder */
+.event-image {
+    background-color: #1C2541 !important;
+}
+
+/* Footer */
+footer {
+    background-color: #0B132B !important;
+    color: #FFFFFF;
+    border-top: 1px solid #1C2541;
+}
+
+/* Registration form */
+form label {
+    color: #FFFFFF;
+}
+
+form input,
+form select {
+    background-color: #1C2541;
+    color: #FFFFFF;
+    border: 1px solid #3A86FF;
+}
+
+form input::placeholder {
+    color: #B8C7E8;
+}
+
+form input:focus,
+form select:focus {
+    border-color: #3A86FF;
+    box-shadow: 0 0 8px rgba(58, 134, 255, 0.4);
+}
+
+
+
+/* Make all home event card borders consistent */
+.upcoming-events .event-card,
+.upcoming-events .event-card:first-child {
+    border: 1px solid #3A86FF !important;
+    box-shadow: 0 0 10px rgba(58, 134, 255, 0.35) !important;
+}
+
+/* Same hover effect for every card */
+.upcoming-events .event-card:hover,
+.upcoming-events .event-card:first-child:hover {
+    border-color: #FFFFFF !important;
+    box-shadow: 0 0 10px #FFFFFF,
+                0 0 25px rgba(255, 255, 255, 0.65) !important;
+}
+
+
+
+/* FINAL FIX - EVENTS PAGE CARDS */
+
+.event-card,
+.upcoming-events .event-card {
+    background: #1C2541 !important;
+    border: 1px solid #3A86FF !important;
+    box-shadow: 0 0 12px rgba(58, 134, 255, 0.35) !important;
+    transition: border-color 0.3s ease,
+                box-shadow 0.3s ease,
+                transform 0.3s ease !important;
+}
+
+.event-card .event-info,
+.upcoming-events .event-card .event-info {
+    background: #1C2541 !important;
+}
+
+.event-card .event-info h3,
+.event-card .event-info p,
+.event-card .event-info .event-details,
+.upcoming-events .event-card h3,
+.upcoming-events .event-card p {
+    color: #FFFFFF !important;
+}
+
+.event-card .event-details {
+    border-top-color: #3A86FF !important;
+}
+
+/* Stronger blue glow on hover */
+.event-card:hover,
+.upcoming-events .event-card:hover {
+    border-color: #FFFFFF !important;
+    box-shadow:
+        0 0 8px #FFFFFF,
+        0 0 20px #3A86FF,
+        0 0 40px rgba(58, 134, 255, 0.8) !important;
+    transform: translateY(-7px) !important;
+}
+
+/* Image placeholder */
+.event-card .event-image {
+    background: #1C2541 !important;
+}
+
+
+
+/* Navbar links - White color */
+
+.nav-links a,
+.nav-links a:visited,
+.nav-links a:active {
+    color: #FFFFFF !important;
+    text-decoration: none !important;
+}
+
+/* Hover effect */
+.nav-links a:hover {
+    color: #3A86FF !important;
+}
+
+
+/* SAME GLOW FOR ALL THREE EVENT CARDS */
+
+.upcoming-events .event-card,
+.upcoming-events .event-card:first-child,
+.upcoming-events .event-card:nth-child(2),
+.upcoming-events .event-card:nth-child(3) {
+    border: 1px solid #3A86FF !important;
+    box-shadow: 0 0 10px rgba(58, 134, 255, 0.3) !important;
+    transition: all 0.3s ease !important;
+}
+
+.upcoming-events .event-card:hover,
+.upcoming-events .event-card:first-child:hover,
+.upcoming-events .event-card:nth-child(2):hover,
+.upcoming-events .event-card:nth-child(3):hover {
+    border-color: #FFFFFF !important;
+    box-shadow:
+        0 0 10px rgba(255, 255, 255, 0.9),
+        0 0 25px rgba(58, 134, 255, 0.8),
+        0 0 40px rgba(58, 134, 255, 0.5) !important;
+    transform: translateY(-6px);
+}
+
+
+
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.navbar .logo img {
+    width: 60px;
+    height: 50px;
+    object-fit: contain;
+    display: block;
+}
