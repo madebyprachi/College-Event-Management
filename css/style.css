@@ -1065,3 +1065,62 @@ form select:focus {
     object-fit: contain;
     display: block;
 }
+
+
+
+.event-image {
+    width: 100%;
+    height: 210px;
+    padding: 0;
+    overflow: hidden;
+}
+
+.event-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+
+.event-image {
+    width: 100%;
+    height: 210px;
+    overflow: hidden;
+}
+
+.event-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.event-image {
+    width: 100%;
+    height: 210px;
+    overflow: hidden;
+    padding: 0;
+}
+
+.event-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+.event-image {
+    width: 100%;
+    height: 210px;
+    overflow: hidden;
+    padding: 0;
+}
+
+.event-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
