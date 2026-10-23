@@ -1,12 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Register | CampusEvents</title>
-
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -14,13 +13,9 @@
 
     <header>
         <nav class="navbar">
-
-<a href="index.html" class="logo">
-    <img src="images/logo.jpg" alt="CampusEvents Logo">
-</a>
-
-
-            <div class="logo">CampusEvents</div>
+            <a href="index.html" class="logo">
+                <img src="images/logo.jpg" alt="CampusEvents Logo">
+            </a>
 
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
@@ -28,71 +23,122 @@
                 <li><a href="about.html">About</a></li>
             </ul>
 
-            <a href="register.html" class="register-btn">Register</a>
-
+            <a href="register.html" class="register-btn active">Register</a>
         </nav>
     </header>
 
-
     <main>
-
-        <section class="events-section">
-
-            <p class="small-title">JOIN AN EVENT</p>
-
+        <section class="page-hero">
+            <p class="small-title">YOUR NEXT EXPERIENCE STARTS HERE</p>
             <h1>Event Registration</h1>
+            <p>Fill in your details to register for a college event.</p>
+        </section>
 
-            <p class="hero-text">
-                Fill in your details to register for a college event.
-            </p>
+        <section class="registration-section">
 
+            <form id="registrationForm" class="registration-form">
 
-            <form id="registrationForm">
+                <h2>Join an Event</h2>
+                <p class="form-description">
+                    Enter your details below.
+                </p>
 
-                <label for="name">Full Name</label>
-                <input type="text" id="name" placeholder="Enter your name" required>
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input
+                        type="text"
+                        id="fullName"
+                        name="fullName"
+                        placeholder="Enter your full name"
+                        required
+                        minlength="2">
+                </div>
 
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        required>
+                </div>
 
-                <label for="studentId">Student ID</label>
-                <input type="text" id="studentId" placeholder="Enter your student ID" required>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="Enter your phone number"
+                        pattern="[0-9]{10}"
+                        maxlength="10"
+                        inputmode="numeric"
+                        title="Enter a 10-digit phone number"
+                        required>
+                </div>
 
+                <div class="form-group">
+                    <label for="college">College Name</label>
+                    <input
+                        type="text"
+                        id="college"
+                        name="college"
+                        placeholder="Enter your college name"
+                        required>
+                </div>
 
-                <label for="email">Email</label>
-                <input type="email" id="email" placeholder="Enter your email" required>
+                <div class="form-group">
+                    <label for="event">Select Event</label>
+                    <select id="event" name="event" required>
+                        <option value="">Choose an event</option>
+                        <option value="Tech Fest 2026">Tech Fest 2026</option>
+                        <option value="Cultural Fest">Cultural Fest</option>
+                        <option value="Sports Meet">Sports Meet</option>
+                    </select>
+                </div>
 
-
-                <label for="event">Select Event</label>
-
-                <select id="event" required>
-                    <option value="">Choose an event</option>
-                    <option value="Tech Fest 2026">Tech Fest 2026</option>
-                    <option value="Cultural Fest">Cultural Fest</option>
-                    <option value="Sports Meet">Sports Meet</option>
-                </select>
-
+                <div class="form-group">
+                    <label for="message">Additional Message (Optional)</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="4"
+                        placeholder="Anything you would like us to know?"></textarea>
+                </div>
 
                 <button type="submit" class="primary-btn">
                     Submit Registration
                 </button>
 
+                <p id="formMessage" role="status" aria-live="polite"></p>
+
             </form>
 
-
-            <div id="successMessage"></div>
-
         </section>
-
     </main>
-
 
     <footer>
         <p>© 2026 CampusEvents. College Event Management System.</p>
         <p>Developed by Prachi Sharma • Dhatri Pandya • Lucky Patel</p>
     </footer>
 
-
     <script src="js/script.js"></script>
 
-</body>
+    <script>
+        const registrationForm = document.getElementById("registrationForm");
+        const formMessage = document.getElementById("formMessage");
 
+        registrationForm.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            formMessage.textContent =
+                "Registration submitted successfully! (Demo only)";
+            formMessage.style.color = "#3A86FF";
+
+            registrationForm.reset();
+        });
+    </script>
+
+</body>
 </html>

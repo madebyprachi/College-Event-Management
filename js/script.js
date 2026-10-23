@@ -1,60 +1,68 @@
-// College Event Management Website
 
-console.log("CampusEvents website loaded successfully!");
+/* ==============================
+   CampusEvents - JavaScript
+================================= */
 
-// =========================
-// REGISTRATION FORM
-// =========================
+document.addEventListener("DOMContentLoaded", function () {
 
-const registrationForm = document.getElementById("registrationForm");
-const successMessage = document.getElementById("successMessage");
+    // Smooth scrolling for same-page links
+    document.querySelectorAll('a[href^="#"]').forEach(function (link) {
+        link.addEventListener("click", function (event) {
+            const targetId = this.getAttribute("href");
 
-if (registrationForm) {
+            if (targetId && targetId !== "#") {
+                const target = document.querySelector(targetId);
 
-    registrationForm.addEventListener("submit", function (event) {
-
-        event.preventDefault();
-
-        const name = document.getElementById("name").value;
-        const selectedEvent = document.getElementById("event").value;
-
-        successMessage.innerHTML = `
-            <div class="success-box">
-                <h3>Registration Successful! 🎉</h3>
-                <p>
-                    Thank you, ${name}.
-                    You are registered for ${selectedEvent}.
-                </p>
-            </div>
-        `;
-
-        registrationForm.reset();
-
+                if (target) {
+                    event.preventDefault();
+                    target.scrollIntoView({
+                        behavior: "smooth",
+                        block: "start"
+                    });
+                }
+            }
+        });
     });
 
-}
+    // Registration form validation
+    const registrationForm =
+        document.getElementById("registrationForm");
 
+    const formMessage =
+        document.getElementById("formMessage");
 
-// =========================
-// AUTO SELECT EVENT
-// =========================
+    if (registrationForm && formMessage) {
 
-const eventSelect = document.getElementById("event");
+        registrationForm.addEventListener("submit", function (event) {
+            event.preventDefault();
 
-if (eventSelect) {
+            if (!registrationForm.checkValidity()) {
+                registrationForm.reportValidity();
+                return;
+            }
 
-    const params = new URLSearchParams(window.location.search);
-    const eventType = params.get("event");
+            formMessage.textContent =
+                "Registration submitted successfully! (Demo only)";
 
-    if (eventType === "tech") {
-        eventSelect.value = "Tech Fest 2026";
+            formMessage.style.color = "#3A86FF";
+
+            registrationForm.reset();
+        });
     }
 
-    if (eventType === "cultural") {
-        eventSelect.value = "Cultural Fest";
-    }
+    // Highlight the current page in navigation
+    const currentPage = window.location.pathname
+        .split("/")
+        .pop() || "index.html";
 
-    if (eventType === "sports") {
-        eventSelect.value = "Sports Meet";
-    }
-}
+    document.querySelectorAll(".nav-links a").forEach(function (link) {
+        const linkPage = link.getAttribute("href");
+
+        if (linkPage === currentPage) {
+            link.classList.add("active");
+        } else {
+            link.classList.remove("active");
+        }
+    });
+
+});
