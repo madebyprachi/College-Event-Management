@@ -760,3 +760,22 @@ footer p {
         font-size: 14px;
     }
 }
+
+.success-animation {
+    animation: successPop 0.5s ease;
+}
+
+@keyframes successPop {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    70% {
+        opacity: 1;
+        transform: translateY(-3px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

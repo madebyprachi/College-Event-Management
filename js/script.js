@@ -45,8 +45,14 @@ document.addEventListener("DOMContentLoaded", function () {
                 "Registration submitted successfully! (Demo only)";
 
             formMessage.style.color = "#3A86FF";
+            formMessage.classList.remove("success-animation");
+void formMessage.offsetWidth;
+formMessage.classList.add("success-animation");
 
             registrationForm.reset();
+            formMessage.textContent =
+            "Registeration submitted successfully! (Demo only)";
+            formMessage.style.color = "#3A86FF";
         });
     }
 
