@@ -176,6 +176,36 @@
     </footer>
 
     <script src="js/script.js"></script>
+  
     
+<div id="page-turn"></div>
+
+<script>
+document.querySelectorAll("a[href]").forEach(link => {
+  link.addEventListener("click", function (event) {
+    const url = new URL(this.href, location.href);
+
+    if (
+      url.origin !== location.origin ||
+      url.pathname === location.pathname ||
+      this.target === "_blank" ||
+      event.ctrlKey ||
+      event.metaKey
+    ) return;
+
+    event.preventDefault();
+
+    const page = document.getElementById("page-turn");
+    page.classList.remove("turning");
+    void page.offsetWidth;
+    page.classList.add("turning");
+
+    setTimeout(() => {
+      location.href = url.href;
+    }, 450);
+  });
+});
+</script>
+
 </body>
 </html>
